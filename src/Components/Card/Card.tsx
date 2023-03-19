@@ -18,8 +18,8 @@ export default function Card({ pokemon }: CardProps) {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className="card_wrapper">
+    <div className="card_wrapper">
+      <ThemeProvider theme={theme}>
         <CardContainer>
           <CardHeader>
             <div className="hp_container">
@@ -69,7 +69,7 @@ export default function Card({ pokemon }: CardProps) {
             </div>
           </CardBody>
         </CardContainer>
-      </div>
-    </ThemeProvider>
+      </ThemeProvider>
+    </div>
   );
 }
