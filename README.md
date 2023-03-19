@@ -1,1 +1,1 @@
-# pokede-react
+# pokedex-react
