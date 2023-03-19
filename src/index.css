@@ -1,0 +1,102 @@
+body {
+  background-color: #2d3142;
+}
+
+.hp_container,
+.name_container,
+.number_container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.hp_container {
+  grid-column: 1/2;
+}
+
+.name_container {
+  grid-column: 2/5;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+
+.name_container p {
+  margin: 5px;
+}
+
+.number_container {
+  grid-column: 5/6;
+}
+
+.card_wrapper,
+.thumbnail_wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.data_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border-radius: px;
+}
+
+.abilities,
+.stats {
+  border: 3px solid #292531;
+  color: #ffff;
+  background-color: rgba(70, 69, 69, 0.575);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.abilities {
+  grid-column: 1/2;
+}
+
+.stats {
+  grid-column: 2/3;
+}
+.stat,
+.abilitie {
+  font-weight: 900;
+}
+
+ul li {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 5px;
+  list-style: none;
+}
+
+/* ANIMATION */
+
+.animate {
+  display: inline-block;
+
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
